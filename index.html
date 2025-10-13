@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>창녕여자고등학교 바로 가기</title>
 
-  <!-- 1️⃣ 웹 폰트 적용 -->
   <style>
     @font-face {
       font-family: 'HsBombaram30';
@@ -26,13 +25,14 @@
       background-color: #f9f9f9;
       text-align: center;
       padding: 60px;
+      margin: 0;
     }
 
     h1 {
       color: #333;
       font-size: 4.2rem;
       margin-bottom: 100px;
-      font-family: 'HsBombaram30', sans-serif; /* ✅ 제목 글꼴 적용 */
+      font-family: 'HsBombaram30', sans-serif;
       word-break: keep-all;
     }
 
@@ -44,9 +44,9 @@
     }
 
     a img {
-      width: 440px;  /* 버튼 크기 조절 */
+      width: 440px;
       height: auto;
-      border-radius: 15px;  /* 둥근 모서리 */
+      border-radius: 15px;
       cursor: pointer;
       transition: transform 0.2s, box-shadow 0.2s;
     }
@@ -55,27 +55,27 @@
       transform: scale(1.05);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
+
     @media (max-width: 768px) {
       body {
         padding: 30px;
       }
 
       h1 {
-        font-size: 3.0rem; /* 제목 크기 축소 */
+        font-size: 3rem;
         margin-bottom: 60px;
       }
 
       .button-container {
-        gap: 25px; /* 버튼 간격 축소 */
+        gap: 25px;
       }
 
       a img {
-        width: 80%; /* 화면 비율에 맞게 버튼 자동 축소 */
-        max-width: 350px; /* 너무 커지지 않게 제한 */
+        width: 80%;
+        max-width: 350px;
       }
     }
 
-    /* ✅ 초소형 화면 (가로 480px 이하)용 스타일 */
     @media (max-width: 480px) {
       h1 {
         font-size: 1.8rem;
@@ -89,6 +89,7 @@
     }
   </style>
 </head>
+
 <body>
   <h1>창녕여자고등학교 바로 가기</h1>
 
@@ -98,19 +99,15 @@
       <img src="/-/school_button.PNG" alt="홈페이지 버튼">
     </a>
 
-    <!-- 📄 보통과 PDF 파일 버튼 -->
-    <a href="/-/안내문.pdf" target="_blank">
-      <img src="/-/pdf_button.PNG" alt="PDF 버튼">
+    <!-- 📄 보통과 PDF 보기 버튼 -->
+    <a href="/-/pdf.html" target="_blank">
+      <img src="/-/pdf_button.PNG" alt="보통과 안내문 버튼">
     </a>
 
-    <!-- ➕ 간호과 PDF 파일 버튼 -->
-    <a href="/-/안내문2.pdf" target="_blank">
-      <img src="/-/new_button.PNG" alt="pdf2 버튼">
+    <!-- ➕ 간호과 PDF 보기 버튼 -->
+    <a href="/-/pdf2.html" target="_blank">
+      <img src="/-/new_button.PNG" alt="간호과 안내문 버튼">
     </a>
   </div>
 </body>
 </html>
-
-
-
-
