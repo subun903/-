@@ -33,6 +33,7 @@
       font-size: 4.2rem;
       margin-bottom: 100px;
       font-family: 'HsBombaram30', sans-serif; /* ✅ 제목 글꼴 적용 */
+      word-break: keep-all;
     }
 
     .button-container {
@@ -53,6 +54,38 @@
     a img:hover {
       transform: scale(1.05);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    @media (max-width: 768px) {
+      body {
+        padding: 30px;
+      }
+
+      h1 {
+        font-size: 2.2rem; /* 제목 크기 축소 */
+        margin-bottom: 60px;
+      }
+
+      .button-container {
+        gap: 25px; /* 버튼 간격 축소 */
+      }
+
+      a img {
+        width: 80%; /* 화면 비율에 맞게 버튼 자동 축소 */
+        max-width: 350px; /* 너무 커지지 않게 제한 */
+      }
+    }
+
+    /* ✅ 초소형 화면 (가로 480px 이하)용 스타일 */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+      }
+
+      a img {
+        width: 90%;
+        max-width: 300px;
+      }
     }
   </style>
 </head>
@@ -77,3 +110,4 @@
   </div>
 </body>
 </html>
+
