@@ -4,7 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>창녕여자고등학교 바로 가기</title>
+
+  <!-- 1️⃣ 웹 폰트 적용 -->
   <style>
+    @font-face {
+      font-family: 'HsBombaram30';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Thin.woff') format('woff');
+      font-weight: 100;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'HsBombaram30';
+      src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+      font-weight: normal;
+      font-display: swap;
+    }
+
     body {
       font-family: "Noto Sans KR", sans-serif;
       background-color: #f9f9f9;
@@ -16,6 +32,7 @@
       color: #333;
       font-size: 4.2rem;
       margin-bottom: 100px;
+      font-family: 'HsBombaram30', sans-serif; /* ✅ 제목 글꼴 적용 */
     }
 
     .button-container {
@@ -45,30 +62,18 @@
   <div class="button-container">
     <!-- 🏫 학교 홈페이지 버튼 -->
     <a href="https://changnyeongyeo-h.gne.go.kr/changnyeongyeo-h/cm/cntnts/cntntsView.do?mi=583850&cntntsId=25384" target="_blank">
-      <img src="school_button.PNG" alt="홈페이지 버튼">
+      <img src="/-/school_button.PNG" alt="홈페이지 버튼">
     </a>
-    <a>
+
+    <!-- 📄 보통과 PDF 파일 버튼 -->
+    <a href="/-/안내문.pdf" target="_blank">
+      <img src="/-/pdf_button.PNG" alt="PDF 버튼">
     </a>
-    <a>
-    </a><a>
-    </a>
-    <!-- 📄 PDF 파일 버튼 -->
-    <a href="안내문.pdf" target="_blank">
-      <img src="pdf_button.PNG" alt="PDF 버튼">
+
+    <!-- ➕ 간호과 PDF 파일 버튼 -->
+    <a href="https://www.google.com" target="_blank">
+      <img src="/-/new_button.PNG" alt="새 버튼">
     </a>
   </div>
-  
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
