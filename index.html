@@ -20,50 +20,62 @@
       font-display: swap;
     }
 
-    body {
+   body {
   font-family: "Noto Sans KR", sans-serif;
-  background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #f8fcff 35%,
-    #e8f6ff 70%,
-    #d5efff 100%
-  );
+  
+  /* 위쪽 흰색 → 아래쪽 파스텔 하늘색 */
+  background:
+    /* 원형 무늬 1 */
+    radial-gradient(
+      circle at 12% 25%,
+      rgba(255, 255, 255, 0.7) 0px,
+      rgba(255, 255, 255, 0.7) 55px,
+      transparent 56px
+    ),
+
+    /* 원형 무늬 2 */
+    radial-gradient(
+      circle at 88% 35%,
+      rgba(255, 255, 255, 0.45) 0px,
+      rgba(255, 255, 255, 0.45) 80px,
+      transparent 81px
+    ),
+
+    /* 원형 무늬 3 */
+    radial-gradient(
+      circle at 20% 80%,
+      rgba(255, 255, 255, 0.35) 0px,
+      rgba(255, 255, 255, 0.35) 100px,
+      transparent 101px
+    ),
+
+    /* 원형 무늬 4 */
+    radial-gradient(
+      circle at 85% 85%,
+      rgba(255, 255, 255, 0.4) 0px,
+      rgba(255, 255, 255, 0.4) 60px,
+      transparent 61px
+    ),
+
+    /* 기본 그라데이션 */
+    linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      #fafdff 25%,
+      #eef9ff 55%,
+      #d8f1ff 100%
+    );
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   text-align: center;
   padding: 60px;
   margin: 0;
   min-height: 100vh;
   box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
 }
-
-body::before {
-  content: "";
-  position: fixed;
-  width: 450px;
-  height: 450px;
-  border-radius: 50%;
-  background: rgba(180, 225, 255, 0.25);
-  top: -180px;
-  left: -120px;
-  filter: blur(30px);
-  z-index: -1;
-}
-
-body::after {
-  content: "";
-  position: fixed;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: rgba(150, 215, 255, 0.2);
-  bottom: -220px;
-  right: -150px;
-  filter: blur(40px);
-  z-index: -1;
-}
-
     h1 {
       color: #333;
       font-size: 4.2rem;
